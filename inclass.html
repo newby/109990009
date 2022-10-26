@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.imge {
+  filter: Sepia(100%);
+}
+img {
+  border:10px solid #555;
+}
+table, th, td{
+  border:1px solid;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.bg{
+  background-color: green;
+}
+.gh{
+  background-color: orange;
+}
+.ht{
+  background-color: green;
+}
+.zz{
+  background-color: yellow
+}
+.xz{
+  background-color: yellow
+}
+</style>
+</head>
+<body>
+<p>Color</p>
+<img src="https://upload.wikimedia.org/wikipedia/zh/3/34/Lenna.jpg" alt="Color">
+<p> Sepia </p>
+<img class=imge src="https://upload.wikimedia.org/wikipedia/zh/3/34/Lenna.jpg",alt="Sepia">
+<table>
+  <tr>
+    <th>Time</th>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+  </tr>
+  <tr>
+    <td>7:30 AM</td>
+    <td>Breakfast</td>
+    <td>Breakfast</td>
+    <td>Breakfast</td>
+  </tr>
+  <tr>
+    <td>8:00 AM</td>
+    <th rowspan="2" class="bg"> Business: Lecture Bldg B, Rm256</th>
+    <th rowspan="3" class="gh">Physics: Lab Bldg J, Rm 309</th>
+    <th rowspan="2" class="ht">Lecture Bldg B, Rm 256</th>
+  </tr>
+  <tr>
+  <td>8:30 AM</td>
+  </tr>
+  <tr>
+    <td>9:00 AM</td>
+    <th rowspan="2" class="zz">Applied Math Bldg H, Rm 100</th>
+    <th rowspan="2" class="xz">Applied Math Bldg H, Rm 100</th>
+  </tr>
+  <tr>
+    <td>9:30 AM</td>
+  </tr>
+  <tr>
+    <td>10:00 AM</td>
+  </tr>
+  <tr>
+    <td>10:30 AM</td>
+  </tr>
+  <tr>
+    <td>11:00 AM</td>
+  </tr>
+  <tr>
+  <td>11:30 AM</td>
+  </tr>
+</table>
+</body>
+</html>
