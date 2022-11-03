@@ -1,0 +1,133 @@
+<html>
+  <style>
+  #ctw {
+      width: 600px;
+    }
+    
+    table, th, td {
+    border:1px solid black;
+  }
+  th {
+    background-color: #3399ff;
+    color: white;
+  }
+    td{
+      background-color: #ffff4d;
+    }
+    
+    
+    
+    .button1 {
+      background-color: #4CAF50; 
+      border: 2px outset;
+      padding: 15px 32px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; 
+      transition-duration: 0.4s;
+    }
+    .button2 {
+      background-color: #008CBA; 
+      border: 2px outset;
+      padding: 15px 32px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; 
+      transition-duration: 0.4s;
+    } 
+    .button3 {
+      background-color: #990099;
+      border: 2px outset;
+      padding: 15px 32px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; 
+      transition-duration: 0.4s;
+    } 
+    .button4 {
+      background-color: #ff6600;
+      border: 2px outset;
+      padding: 15px 32px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; 
+      transition-duration: 0.4s;
+    } 
+
+</style>
+
+  <body>
+     <table id="ctw">
+  <tr>
+    <th>Math</th>
+    <th>English</th>
+    <th>Programming</th>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>60</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>86</td>
+    <td>98</td>
+  </tr>
+    </table>
+
+    <script>
+    function my200() {
+document.getElementById("ctw").style.width = "200px";
+    }
+    function my500() {
+document.getElementById("ctw").style.width = "500px";
+    }
+
+    function my1() {
+document.getElementById("ctw").style.border = "1px solid black";
+document.getElementById("ctw").style.pading = "1px";
+    }
+    function my10() {
+document.getElementById("ctw").style.border= "10px solid black";
+document.getElementById("ctw").style.padding = "10px";
+    }
+    function my20() {
+document.getElementById("ctw").style.border = "20px solid black";
+document.getElementById("ctw").style.padding = "20px";
+    }
+      
+      function myGreen(){
+document.getElementbyId("ctw").style.backgroundColor = "#4CAF50";
+      }
+  function myBlue(){
+document.getElementbyId("ctw").style.backgroundColor = "#008CBA";
+      }
+  function myPurple(){
+document.getElementbyId("ctw").style.backgroundColor = "#990099";
+      }
+  function myOrange(){
+document.getElementbyId("ctw").style.backgroundColor = "#ff6600";
+      }
+
+    </script>
+
+    <p>Change The Table Width</p>
+    <button type="button" onclick="my200()">200px</button>
+    <button type="button" onclick="my500()">500px</button>
+
+    <p>Change The Border and the Spacing Width</p>
+    <button type="button" onclick="my1()">1px</button>
+    <button type="button" onclick="my10()">10px</button>
+    <button type="button" onclick="my20()">20px</button>
+    
+    <p>Change The Table Color</p>
+    <button class="button1" onclick="myGreen()"></button>
+    <button class="button2" onclick="myBlue()"></button>
+    <button class="button3" onclick="myPurple()"></button>
+    <button class="button4" onclick="myOrange()"></button>
+    
+    <br><button type="button">Reset</button>
+
+
+  </body>
+</html>
